@@ -1,0 +1,46 @@
+#ifndef RAW_ADDRESS_H
+#define RAW_ADDRESS_H
+// use of header guards
+
+
+
+// namespace ??
+namespace qaic {
+    class RawAddress {
+    private:
+        char* name_;
+        char* county_;
+        const unsigned int roadNum_;
+
+
+
+   public:
+        RawAddress(const char* name, const char* county, unsigned int roadNum)
+	  {
+name_ = name;
+county_ = county;
+roadNum_ = roadNum;
+        };
+        ~RawAddress();
+
+
+
+
+       const char * getName() const { return name_; }
+        const char * getCounty() const { return county_; }
+        unsigned int getRoadNum() const { return roadNum_; }
+
+
+
+       RawAddress(const RawAddress&) = delete;
+        RawAddress& operator=(const RawAddress&) = delete;
+    };
+} // end of namespace qaic
+
+
+
+#endif // RAW_ADDRESS_H
+
+
+
+// Write constructor, destructor , design improvement.
