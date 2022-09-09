@@ -1,5 +1,6 @@
 # Dissertation
-Analysis of Property Prices in Ireland
+## Analysis of Property Prices in Ireland
+
 This is the master thesis in MSc Data Analytics which is based on the property prices in Ireland.
 
 The house prices are increasing every year since 2012 in Ireland, and it is demanding the analysis and prediction of property prices. 
